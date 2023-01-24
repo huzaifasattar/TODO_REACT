@@ -1,6 +1,6 @@
 {
   "name": "todo-list",
-  "homepage": "http://huzaifasattar.github.io/React-Todo", 
+  "homepage": "http://huzaifasattar.github.io/TODO_REACT", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
