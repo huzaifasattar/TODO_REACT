@@ -8,7 +8,13 @@ export const Dataprovider = (props) => {
     
     const itemStore = JSON.parse(localStorage.getItem('itemStore'))
        
-    const [todos, setTodos] = useState(itemStore)
+  const [todos, setTodos] = useState(() => {
+    return itemStore ? itemStore : []
+  })
+//   useEffect(() => {
+//     const itemStore = JSON.parse(localStorage.getItem('itemStore'))
+//     if(itemStore) setTodos(itemStore)
+// }, [])
     
     useEffect(() => {
         localStorage.setItem('itemStore',JSON.stringify(todos))
